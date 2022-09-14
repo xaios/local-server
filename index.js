@@ -19,7 +19,7 @@ module.exports = class {
   }
 
   constructor(host, s_id, t_id, option = {}) {
-    this._db = new DB('xaios_local_server')
+    this._db = new DB(option.db_name || 'xaios_local_server', option.db_version)
     this._db.$on('error', e => this.$emit('error', e))
 
     this._host = host

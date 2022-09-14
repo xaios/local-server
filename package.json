@@ -2,7 +2,7 @@
   "name": "@xaios/local-server",
   "author": "aizhifeng",
   "description": "同浏览器标签页间数据通信",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "dependencies": {
     "@xaios/tiny-db": "*"

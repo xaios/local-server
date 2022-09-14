@@ -32,7 +32,8 @@ export default {
 
     // 连接的页面双方都需要建立信道，以监听处理相关数据通信事件
     // 第四参数是可选的配置对象，分别配置断连判别时间与心跳间隔时间，分别默认是 5000 与 4000，单位毫秒
-    // this.server_b = new Server(this, 'page B', 'page A', { death_time, heart_time })
+    // db name 与 version 可选，自定义配置数据管理用的 indexedDB 名与版本号
+    // this.server_b = new Server(this, 'page B', 'page A', { death_time || 5000, heart_time || 4000, db_name || 'xaios_local_server', db_version || 1 })
 
     // 调用连接端的函数获取返回值，若函数内部抛出异常，不会返回，不会有错误事件
     // this.server_b.Request('GetData', 'name', 'param').then(data => {})
